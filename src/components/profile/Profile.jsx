@@ -29,8 +29,7 @@ const Profile = () => {
     <section className="profile">
       {loading === false ? (
         <main>
-          console.log("KKK");
-          <motion.img src={user.photo} alt="User" {...options} />
+          {/* <motion.img src={user.photo} alt="User" {...options} /> */}
           <motion.h5 {...options} transition={{ delay: 0.3 }}>
             {user.name}
           </motion.h5>
@@ -43,11 +42,12 @@ const Profile = () => {
                   borderRadius: 0,
                   backgroundColor: "rgb(40,40,40)",
                 }}
-              >
+                >
                 <MdDashboard /> Dashboard
               </Link>
             </motion.div>
           )}
+          {/* console.log("KKK"); */}
 
           <motion.div
             initial={{
