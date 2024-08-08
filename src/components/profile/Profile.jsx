@@ -29,7 +29,7 @@ const Profile = () => {
     <section className="profile">
       {loading === false ? (
         <main>
-          {/* <motion.img src={user.photo} alt="User" {...options} /> */}
+          <motion.img src={user.photo} alt="User" {...options} />
           <motion.h5 {...options} transition={{ delay: 0.3 }}>
             {user.name}
           </motion.h5>
@@ -47,7 +47,7 @@ const Profile = () => {
               </Link>
             </motion.div>
           )}
-          {/* console.log("KKK"); */}
+        
 
           <motion.div
             initial={{

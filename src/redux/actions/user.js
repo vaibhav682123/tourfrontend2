@@ -7,7 +7,7 @@ export const loadUser = () => async (dispatch) => {
       type: "loadUserRequest",
     });
 
-    const { data } = await axios.get(`/me`, {
+    const { data } = await axios.get(`${server}/me`, {
       withCredentials: true,
     });
 
@@ -31,7 +31,7 @@ export const logout = () => async (dispatch) => {
       type: "logoutRequest",
     });
 
-    const { data } = await axios.get(`/logout`, {
+    const { data } = await axios.get(`${server}/logout`, {
       withCredentials: true,
     });
 

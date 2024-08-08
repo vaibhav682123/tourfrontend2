@@ -18,7 +18,7 @@ export const createOrder =
         console.log("Order Items:", orderItems); // Log orderItems
 
         const { data } = await axios.post(
-          `/createorder`,
+          `${server}/createorder`,
           {
             shippingInfo,
             orderItems,
@@ -88,7 +88,7 @@ export const getMyOrders = () => async (dispatch) => {
   try {
     dispatch({ type: "getMyOrdersRequest" });
 
-    const { data } = await axios.get(`/myorders`, {
+    const { data } = await axios.get(`${server}/myorders`, {
       withCredentials: true,
     });
 
@@ -102,7 +102,7 @@ export const getOrderDetails = (id) => async (dispatch) => {
   try {
     dispatch({ type: "getOrderDetailsRequest" });
 
-    const { data } = await axios.get(`/order/${id}`, {
+    const { data } = await axios.get(`${server}/order/${id}`, {
       withCredentials: true,
     });
 
