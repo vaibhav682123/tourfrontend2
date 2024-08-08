@@ -29,6 +29,7 @@ const Profile = () => {
     <section className="profile">
       {loading === false ? (
         <main>
+          console.log("KKK");
           <motion.img src={user.photo} alt="User" {...options} />
           <motion.h5 {...options} transition={{ delay: 0.3 }}>
             {user.name}
