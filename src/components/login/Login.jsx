@@ -5,7 +5,7 @@ import { server } from "../../redux/store";
 
 const Login = () => {
   const loginHandler = () => {
-    window.open(`${server}/googlelogin`, "_self");
+    window.open(`/googlelogin`, "_self");
   };
 
   return (
