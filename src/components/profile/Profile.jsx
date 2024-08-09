@@ -1,3 +1,4 @@
+
 import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
@@ -42,12 +43,11 @@ const Profile = () => {
                   borderRadius: 0,
                   backgroundColor: "rgb(40,40,40)",
                 }}
-                >
+              >
                 <MdDashboard /> Dashboard
               </Link>
             </motion.div>
           )}
-        
 
           <motion.div
             initial={{

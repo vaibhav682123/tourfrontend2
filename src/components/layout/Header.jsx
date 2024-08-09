@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { FiShoppingCart, FiLogIn } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
 import {motion} from "framer-motion"
-const Header = ({ isAuthenticated  }) => {
+const Header = ({ isAuthenticated=false  }) => {
   return (
     <nav>
       <motion.div
