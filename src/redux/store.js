@@ -16,4 +16,4 @@ const store = configureStore({
 
 export default store;
 
-export const server = "https://deploy-j447.onrender.com/api/v1";
+export const server = "https://tourstackserver.vercel.app/api/v1";
